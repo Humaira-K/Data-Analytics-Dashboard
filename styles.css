@@ -25,10 +25,7 @@ section {
     background-position: -100px;
     height: 100%;
     padding: 2em;
-}
-
-nav {
-    display: none;
+    border-radius: 13px;
 }
 
 .logo {
@@ -97,4 +94,49 @@ h1 {
 
 .calltoaction:hover {
     background: var(--primary-color);
+}
+nav {
+    position: fixed;
+    z-index: 1;
+    background: #2D2931;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    max-width: 300px;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+   width: 100%;
+}
+nav ul li {
+    width: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .875em 5em .875em 4em;
+}
+
+nav ul li a:hover {
+    background: #413E47;
+}
+
+.back-btn {
+    transform: scaleX(-1);
+    padding: 3em 4em 2em;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.back-btn:hover {
+    transform: scaleX(-1) translateX(6px);
+}
+
+.active {
+    background: var(--primary-color);
+}
+.active:hover {
+    background: #4497FF;
 }
